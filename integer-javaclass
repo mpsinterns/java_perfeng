@@ -1,0 +1,26 @@
+public class IntegerMethods{
+   public static void main(String[] args){
+   
+       
+   long startTime = System.currentTimeMillis();  // variable startTime that displays The current time
+     
+     //for loop for my integer class
+     for(int i = 0; i <= 100 ; i++){
+       int j = (int)(Math.random()*25);
+       int k = (int)(Math.random()*75);
+       
+       //comparing two integers j and k
+       
+       Integer.compare(j, k);
+       
+       //bitcount method from the integer class
+       Integer.bitCount(j);
+       Integer.bitCount(k);
+   }
+   
+   long endTime = System.currentTimeMillis();  //Another variable called endTime that displays current time
+   long difference = endTime - startTime;  //The difference variable that subtracts endTime from startTime to show the time it took to execute the code.
+   System.out.println("Time to execute this code: " + difference);
+   
+}
+}
